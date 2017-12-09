@@ -1,0 +1,17 @@
+## Interface: 11200
+## Title: XLoot |cFF77BBFFMaster|r
+## Notes: Highly configurable master looter dropdown menu
+## Version: 0.5
+## Author: Xuerian
+## X-Category: Raid
+## X-eMail: sky.shell@gmail.com
+## X-Website: http://wowace.com/index.php/XLoot
+## Dependencies: XLoot
+
+## OptionalDeps: Ace2, DewdropLib
+
+XLootMaster.lua
+XLootMasterOptions.lua
+
+localization.enUS.lua
+localization.frFR.lua

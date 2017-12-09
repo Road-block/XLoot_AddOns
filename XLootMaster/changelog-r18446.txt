@@ -1,0 +1,70 @@
+------------------------------------------------------------------------
+r18446 | xuerian | 2006-11-30 17:12:00 -0500 (Thu, 30 Nov 2006) | 1 line
+
+XLootMaster: Only opens if you ARE the master looter. Added small 'roll time remaining' text. Added frFR localization.
+------------------------------------------------------------------------
+r16554 | xuerian | 2006-11-10 06:27:00 -0500 (Fri, 10 Nov 2006) | 1 line
+
+XLootMaster: Whoops. Let's not recursively nil a table that has keys in use in other places. Caught a unlocalized string too.
+------------------------------------------------------------------------
+r16553 | xuerian | 2006-11-10 05:51:22 -0500 (Fri, 10 Nov 2006) | 1 line
+
+XLootMaster: Localization split into localization.enUS.lua, ready for translation. Cleanup in main file. Version Bumpy-bumpy
+------------------------------------------------------------------------
+r16405 | xuerian | 2006-11-08 20:18:58 -0500 (Wed, 08 Nov 2006) | 1 line
+
+XLootMaster: Whoops. DC'ing the LM is bad. Let's not. Thanks Armooo!
+------------------------------------------------------------------------
+r16279 | sbu | 2006-11-07 21:02:05 -0500 (Tue, 07 Nov 2006) | 1 line
+
+XLootMaster: fixed copy&paste error
+------------------------------------------------------------------------
+r16231 | xuerian | 2006-11-07 07:10:42 -0500 (Tue, 07 Nov 2006) | 1 line
+
+XLootMaster: Split options into separate file. Added/changed a bunch of options. Added automatic loot announcement (With fully customizable strings and various other options). DKP/value code making appearances. Now makes use of ckknight's metatable voodoo <3
+------------------------------------------------------------------------
+r15788 | xuerian | 2006-11-02 22:59:45 -0500 (Thu, 02 Nov 2006) | 1 line
+
+XLootMaster: @#%$!. Thanks Armooo, added missing self:. Fix to fix now actually fixes problem meant to be fix by fix formerly affixed to the thingy.
+------------------------------------------------------------------------
+r15787 | xuerian | 2006-11-02 22:51:29 -0500 (Thu, 02 Nov 2006) | 1 line
+
+XLootMaster: Fixed selfloot
+------------------------------------------------------------------------
+r15783 | xuerian | 2006-11-02 22:10:14 -0500 (Thu, 02 Nov 2006) | 3 lines
+
+XLootMaster: Woo. Random menu (To player, request roll, roll display).
+Proper options menu.
+Removed merged functions
+------------------------------------------------------------------------
+r15383 | xuerian | 2006-10-28 06:12:28 -0400 (Sat, 28 Oct 2006) | 1 line
+
+XLootMaster: Re-merged utility functions to account for XLoot rollback.
+------------------------------------------------------------------------
+r15342 | xuerian | 2006-10-27 20:15:02 -0400 (Fri, 27 Oct 2006) | 1 line
+
+XLootMaster: Added options for confirmation threshold, item tooltips, and player tooltips. Moved menu into submenu.
+------------------------------------------------------------------------
+r15306 | xuerian | 2006-10-27 08:07:46 -0400 (Fri, 27 Oct 2006) | 1 line
+
+XLootMaster: All sorting works now. Hurrah.
+------------------------------------------------------------------------
+r15069 | xuerian | 2006-10-24 07:41:03 -0400 (Tue, 24 Oct 2006) | 3 lines
+
+XLootMaster: Removed Gratuity from toc and init.
+Added: Priority list. Applicable in raid only, currently only accessible from ml dropdown in raid. Sorting doesn't work yet. Blame lua. Yes I know there are "Move up" and "Move down" buttons. -they don't work-. Also may have fucked up party looting again... oops.
+
+------------------------------------------------------------------------
+r14950 | roartindon | 2006-10-23 06:47:14 -0400 (Mon, 23 Oct 2006) | 2 lines
+
+XLootMaster: Set eol-style to native. Fixed tooltips in party loot
+
+------------------------------------------------------------------------
+r14937 | xuerian | 2006-10-23 04:54:33 -0400 (Mon, 23 Oct 2006) | 1 line
+
+XLootMaster: Cleanup, menu tweaks, unit tooltip on mouseover. Added tsvn:logtemplate.
+------------------------------------------------------------------------
+r14934 | xuerian | 2006-10-23 04:22:40 -0400 (Mon, 23 Oct 2006) | 1 line
+
+.XLootMaster: Initial commit.
+------------------------------------------------------------------------

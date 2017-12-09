@@ -1,0 +1,18 @@
+## Interface: 11200
+## Title: XLoot |cFF77BBFFMonitor|r
+## Notes: A live monitor of loot picked up by yourself and your group
+## Version: 0.7
+## Author: Xuerian
+## X-Category: Inventory
+## X-eMail: sky.shell@gmail.com
+## X-Website: http://wowace.com/index.php/XLoot
+## Dependencies: XLoot
+
+## OptionalDeps: Ace2, DewdropLib, AnchorsAway
+
+localization.enUS.lua
+localization.frFR.lua
+localization.koKR.lua
+
+XLootMonitor.lua
+XLootMonitorOptions.lua

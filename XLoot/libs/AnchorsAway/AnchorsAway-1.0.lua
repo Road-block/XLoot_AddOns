@@ -9,7 +9,7 @@ Description: Row stacking and anchoring template
 Dependencies: AceLibrary, AceEvent-2.0, AceLocale-2.2
 ]]
 
-local vmajor, vminor = "AnchorsAway-1.0", "$Revision: 18442 $"
+local vmajor, vminor = "AnchorsAway-1.0", "$Revision: 18443 $"
 
 if not AceLibrary then error(vmajor .. " requires AceLibrary.") end
 if not AceLibrary:IsNewVersion(vmajor, vminor) then return end
@@ -290,7 +290,7 @@ function AnchorsAway:NewAnchor(stackname, anchorname, icon, db, dewdrop, index, 
 	stack.frame:SetWidth(150)
 	stack.frame:SetHeight(20)
 
-	stack.frame:SetPoint("TOPLEFT", UIParent, "BOTTOMLEFT", stack.db.pos.x or GetScreenWidth()/2, stack.db.pos.y or GetScreenWidth()/2) 	
+	stack.frame:SetPoint("TOPLEFT", UIParent, "BOTTOMLEFT", stack.db.pos.x or GetScreenWidth()/2, stack.db.pos.y or GetScreenHeight()/2) 	
 	
 	stack.frame:SetBackdrop({r = 0, g = 0, b = 0, a = 0.9})
 	stack.frame:SetBackdropBorderColor(.5, .5, .5, 1)

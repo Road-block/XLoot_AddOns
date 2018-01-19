@@ -123,11 +123,13 @@ do
 	if XLoot.compat then
 		-- 2.0.0
 		function XLoot:ItemInfo(num) -- itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, invTexture
+			if not (num) then return end
 			local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, invTexture = GetItemInfo(num)
 			return itemName, itemLink, itemRarity, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, invTexture, itemLevel
 		end
 	else
 		function XLoot:ItemInfo(num) -- itemName, itemString, itemQuality, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture
+			if not (num) then return end
 			local itemName, itemString, itemQuality, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture = GetItemInfo(num)
 			if (itemName) then
 				return itemName, itemString, itemQuality, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture
@@ -606,6 +608,7 @@ end
 
 function XLoot:SetSlotInfo(slot, button) -- Yay wowwiki demo
 	local link =  GetLootSlotLink(slot)
+	if not (link) then return end
 	local itemName, itemLink, itemRarity, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc = self:ItemInfo(self:LinkToID(link))
 	if itemType == "Weapon" then
 		itemEquipLoc = "Weapon"

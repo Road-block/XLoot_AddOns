@@ -2,12 +2,11 @@
 ## Title: XLoot |cff7fff7f -Ace2-|r
 ## Notes: A remake of the built-in lootframe. |cffff4488By Xuerian|r.
 ## Notes-zhTW: 拾取物品增強
-## Version: 0.91
+## Version: 0.92
 ## Author: Xuerian
 ## X-Category: Inventory
-## X-AceForum: 2278
 ## X-eMail: sky.shell@gmail.com
-## X-Website: http://wowace.com/index.php/XLoot
+## X-Website: https://github.com/Road-block/XLoot_AddOns/releases
 ## X-Credits: Arm of Aman Thul on Argent Dawn for testing, the authors of all the embeds XLoot uses, #wowace on Freenode.net for being my support group and helping fix bugs, fenlis for koKR translation, Cinedelle for frFR translation
 
 ## OptionalDeps: Ace2, DewdropLib, Deformat, AnchorsAway

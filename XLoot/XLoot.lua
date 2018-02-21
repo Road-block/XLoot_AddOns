@@ -345,7 +345,7 @@ function XLoot:OnHide()
 end
 
 function XLoot:ClickCheck(button)
-	if IsAltKeyDown() and button == "RightButton" and self.db.profile.altoptions and not IsShiftKeyDown() and not IsControlKeyDown() then
+	if self.db.profile.altoptions and IsAltKeyDown() and button == "RightButton" and not IsShiftKeyDown() and not IsControlKeyDown() then
 		self:OpenMenu(XLootFrame)
 		return 1
 	end

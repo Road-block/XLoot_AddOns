@@ -6,7 +6,7 @@ XLootMaster.dewdrop = AceLibrary("Dewdrop-2.0")
 
 local deformat = AceLibrary("Deformat-2.0")
 
-XLootMaster.revision  = tonumber((string.gsub("$Revision: 18446 $", "^%$Revision: (%d+) %$$", "%1")))
+XLootMaster.revision  = tonumber((string.gsub("$Revision: 18447 $", "^%$Revision: (%d+) %$$", "%1")))
 
 ----- Module setup -----
 function XLootMaster:OnInitialize()
@@ -380,7 +380,7 @@ function XLootMaster:InjectRandomMenu(level, value)
 							self.dewdrop:AddLine(
 								'text', string.format("%s - %s", v2.roll, name),
 								'closeWhenClicked', true,
-								'func', function() self:GiveLoot(name, self:GetMLID(k2), rawname); self:ClearRolls() end, true, true)
+								'func', function() self:GiveLoot(name, self:GetMLID(rawname), rawname); self:ClearRolls() end, true, true)
 						end
 					end
 				end

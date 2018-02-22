@@ -6,7 +6,7 @@ XLootMaster.dewdrop = AceLibrary("Dewdrop-2.0")
 
 local deformat = AceLibrary("Deformat-2.0")
 
-XLootMaster.revision  = tonumber((string.gsub("$Revision: 18447 $", "^%$Revision: (%d+) %$$", "%1")))
+XLootMaster.revision  = tonumber((string.gsub("$Revision: 18448 $", "^%$Revision: (%d+) %$$", "%1")))
 
 ----- Module setup -----
 function XLootMaster:OnInitialize()
@@ -150,6 +150,7 @@ function XLootMaster:BuildRaidMenu(level, value)
 		self:BuildPlayerList()
 		self:InjectPriorityList()
 		self:InjectClasses()
+		self.dewdrop:AddLine()
 		local ownname = UnitName("player")
 		self.dewdrop:AddLine(
 			'text', "|cFFBBBBBB"..L["Self loot"],
@@ -332,14 +333,6 @@ function XLootMaster:InjectRandomMenu(level, value)
 	if not db.mlrandom then return end
 	if level == 1 then
 		self.dewdrop:AddLine()
-		self.dewdrop:AddLine(
-			'text', L["Random"],
-			'icon', "Interface\\Buttons\\UI-GroupLoot-Dice-Up",
-			'iconWidth', 20,
-			'iconHeight', 20, 
-			'hasArrow', true,
-			'value', 'random')
-	elseif level == 2 and value == 'random' then
 		local randplayer, randid = self:GetRandomMLID()
 		self.dewdrop:AddLine(
 			'text', L["Give to random player"],
@@ -347,8 +340,16 @@ function XLootMaster:InjectRandomMenu(level, value)
 			'iconWidth', 20,
 			'iconHeight', 20, 
 			'func', function() self:GiveLoot(randplayer, randid, nil, "Random") end)
+		self.dewdrop:AddLine(
+			--'text', L["Random"],
+			'text', L["Rolls"],
+			'icon', "Interface\\Buttons\\UI-GroupLoot-Dice-Up",
+			'iconWidth', 20,
+			'iconHeight', 20, 
+			'hasArrow', true,
+			'value', 'random')
+	elseif level == 2 and value == 'random' then
 		if db.mlrolls then
-			self.dewdrop:AddLine()
 			self.dewdrop:AddLine(
 				'text', L["Clear list and announce new roll"],
 				'icon', 'Interface\\Buttons\\UI-GuildButton-MOTD-Up', 

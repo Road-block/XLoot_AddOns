@@ -11,6 +11,7 @@ L:RegisterTranslations("enUS", function()
 		["Move Down"] = true,
 		["Remove"] = true,
 		["Random"] = true,
+		["Rolls"] = true,
 		["Give to random player"] = true,
 		["Clear list and announce new roll"] = true,
 		["|cFF2255FFListening... |cFF44FF44%s|cFF2255FF seconds left"] = true,
